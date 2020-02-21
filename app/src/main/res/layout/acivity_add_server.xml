@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/protocolDropdown"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/protocols"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/hostname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hostname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/port"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveServerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_server_info" />
+</LinearLayout>
